@@ -1,0 +1,35 @@
+<div ng-show="lineName === 'jubilee'">East Bound Train arriving at Platform 4</div>
+<div ng-show="lineName === 'northern'">South Bound Train arriving at Platform 2</div>
+
+<table class="table table-striped">
+    <tr>
+        <th>Departure Time</th>
+        <th>Destination</th> 
+        <th>Current Location</th>       
+        
+    </tr>
+    <tr ng-repeat="train in eastbound " class="repeat-animation">
+        <td>{{ train.best_departure_estimate }}</td>
+        <td>{{ train.destination_name }}</td>
+        <td>{{ train.location }}</td>    
+    </tr>
+</table>
+
+<BR/><BR/>
+
+<div ng-show="lineName === 'jubilee'">West Bound Train arriving at Platform 3</div>
+<div ng-show="lineName === 'northern'">North Bound Train arriving at Platform 1</div>
+
+<table class="table table-striped">
+    <tr>
+        <th>Departure Time</th>
+        <th>Destination</th> 
+        <th>Current Location</th>       
+        
+    </tr>
+    <tr ng-repeat="train in westbound " class="repeat-animation">
+        <td>{{ train.best_departure_estimate }}</td>
+        <td>{{ train.destination_name }}</td>
+        <td>{{ train.location }}</td>    
+    </tr>
+</table>

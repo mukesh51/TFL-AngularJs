@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html ng-app="tflFunApp">
+<head>
+    <title>TFL FUN</title>
+    <!--link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"-->
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+</head>
+<body>
+    <div>
+        <a href="#/"><img ng-src="styles/UnderGround_New.jpg"/></a>
+        <a href="#/overground"><img ng-src="styles/OverGround_New.jpg"/></a>
+    </div>    
+    <ng-view></ng-view>
+
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="angular-animate.js"></script>
+    <script src="ui-bootstrap-tpls-0.13.0.js"></script>
+
+    <script src="app/app.js"></script>    
+    <script src="app/controllers/lineController.js"></script>
+    <script src="app/controllers/overgroundController.js"></script>
+    <script src="app/controllers/stationsLineController.js"></script>
+    <script src="app/controllers/liveDepartureController.js"></script>
+    <script src="app/services/lineFactory.js"></script>
+    <script src="app/services/filterValue.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.js"></script>
+
+
+
+</body>
+</html>

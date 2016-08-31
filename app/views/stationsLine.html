@@ -1,0 +1,19 @@
+There are {{ stations.length }} stations on {{ lineName }} Line. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#/">Go Back</a>
+
+<p>Filter: <input type="text" ng-model="stationFilter.name" /></p>
+
+<table class="table table-striped">
+    <tr>
+        <th ng-click="sortIt('name')">Station Name</th>
+        <th ng-click="sortIt('station_code')">Station Code</th> 
+        <th>Live Departures</th>       
+        
+    </tr>
+    <tr ng-repeat="station in stations | filter:stationFilter | orderBy:sortBy:ascdesc " class="repeat-animation">
+        <td>{{ station.name }}</td>
+        <td>{{ station.station_code }}</td>
+        <td><a href="#/livedeparture/{{ lineName | lowercase }}/{{station.station_code}}">Live Departures</a></td>            
+        
+
+    </tr>
+</table>

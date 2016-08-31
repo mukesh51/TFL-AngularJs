@@ -1,0 +1,7 @@
+<div class="panel panel-primary" ng-repeat="line in lines">
+  <div class="panel-body font-color {{line.friendly_name}}">
+        
+    <a href="#/stn/{{ line.friendly_name | lowercase }}"> {{ line.friendly_name }} </a> <span style="float:right;">{{ line.status }}</span>
+        
+  </div>  
+</div>

@@ -1,0 +1,41 @@
+
+<h2>Train Times</h2>
+    
+    <input type="text" ng-model="customSelected" placeholder="Enter Station Name" typeahead="state as state.name for state in stations | filter:{name:$viewValue}" typeahead-on-select="showLiveDeparture(customSelected)" class="form-control">
+        
+
+    <div cclass="col-xs-12" ng-show="stationDetails[0]">    	
+      		<h4>Live Departures from: {{customSelected.name}}</h4>    	
+
+    	<table class="table">
+		    <thead>
+		        <tr>
+		            <th>Departure </th>
+		            <th>Origin</th>
+		            <th>Destination</th>
+		            <th>Expected on Platform</th>
+		            <th>Platform</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+
+			    <tr class="warning"  ng-repeat="station in stationDetails">		
+					<td>
+						{{station.aimed_departure_time}}
+					</td>
+					<td>
+						{{station.origin_name}}
+					</td>
+					<td>
+						{{station.destination_name}}
+					</td>
+					<td>
+						{{station.expected_departure_time}}
+					</td>
+					<td>
+						{{station.platform}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>

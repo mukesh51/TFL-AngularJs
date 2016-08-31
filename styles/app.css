@@ -1,0 +1,52 @@
+div.font-color {
+  color: white;
+}
+
+div.font-color a{
+  color: white;
+}
+
+div.Bakerloo{
+  background: #894e24;  
+}
+
+div.Central {
+  background: #dc241f;
+}
+
+div.Circle {
+  background: #ffce00;
+}
+
+div.District{
+  background: #007229;
+}
+
+div.Hammersmith, div.Hammersmith-city{
+  background: #d799af;
+}
+
+div.DLR{
+  background: #00afad;
+}
+
+div.Jubilee{
+  background: #6a7278;
+}
+
+div.Metropolitan {
+  background: #751056;
+}
+
+div.Northern{
+  background: black;
+}
+div.Piccadilly {
+  background: #0019a8;
+}
+div.Victoria {
+  background: #00a0e2;
+}
+div.Waterloo {
+  background: #76d0bd;
+}
